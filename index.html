@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<link href="css/mycss.css" rel="stylesheet" />	
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css" />	
+	<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>	
+  
+<style>
+  .custom-model-1 {      
+      text-align: center;
+      font-size: 30px;
+  }  
+</style>  
+
+</head>
+<body>
+
+<div class="container">
+
+<div class="row">
+	<div class="col-md-4">
+	</div>
+
+	<div class="col-md-4">
+		
+		<!-- for login  and signup-->
+		<div class="well">		
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#login" data-toggle="tab">Login</a></li>
+				<li><a href="#create" data-toggle="tab">Create Account</a></li>
+			</ul>			
+			<div class="tab-content">
+				<!-- for login-->
+				<div class="tab-pane active in" id="login">
+				<fieldset>
+					<div id="legend">
+						<legend class=""><h3 class="custom-model-1"> <span class="glyphicon glyphicon-lock"></span> Login</h3></legend>
+					</div>
+					<form role="form" method="post" action="#">
+						<div class="form-group">
+						  <label for="usrname"> <span class="glyphicon glyphicon-user"></span> Username</label>
+						  <input type="email" class="form-control" id="usrname" name="usrname" placeholder="Enter email" required >
+						</div>
+						<div class="form-group">
+						  <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+						  <input type="password" class="form-control" id="psw" name="psw" placeholder="Enter password" required >
+						</div>
+						<div class="checkbox">
+						  <label><input type="checkbox" value="" checked>Remember me</label>
+						</div>
+						<div>						
+						</div>
+						  <button type="submit" name="login" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login</button>
+					</form>							
+				</fieldset>					                
+				</div>
+				<!-- end of login-->
+				
+				
+				<!-- for signup-->
+				<div class="tab-pane fade" id="create">				
+				<fieldset>
+					<div>
+						<legend class=""><h3 class="custom-model-1" > <span class="glyphicon glyphicon-user"></span> Create Account</h3></legend>
+					</div> 				
+					<form role="form" method="post" action="#">
+						<div class="form-group">
+						  <label for="name"><span class="glyphicon glyphicon-user"></span> Name</label>
+						  <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required>
+						</div>
+						<div class="form-group">
+						  <label for="email"><span class="glyphicon glyphicon-envelope"></span> Email </label>
+						  <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+						</div>
+						<div class="form-group">
+						  <label for="npsw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+						  <input type="password" class="form-control" id="npsw" name="npsw" placeholder="Enter password" required>
+						</div>			
+						<div class="form-group">
+						  <label for="mobno"><span class="glyphicon glyphicon-phone"></span> Mobile number</label>
+						  <input type="text" class="form-control" id="mobno" name="mobno" placeholder="Enter mobile number" required  maxlength="10">
+						</div>
+						<div class="checkbox">
+						  <label><input type="checkbox" value="" checked required >I Agree</label>
+						</div>
+						<div>						
+						</div>
+						  <button type="submit" name="signup" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> SignUp</button>
+					</form>
+				</fieldset>	
+				</div>
+				<!-- end of signup-->
+				
+			</div>
+		</div>
+		<!-- end of login  and signup-->
+		
+	</div>		
+	<div class="col-md-4">
+	</div>		
+</div>		
+  
+</div>
+
+</body>
+</html>

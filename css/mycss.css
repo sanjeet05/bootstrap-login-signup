@@ -1,0 +1,23 @@
+
+.navbar-custom {
+    
+    background: #029696;
+    color: #FFFFFF;
+}
+
+.gridd_13 {
+	display: inline;
+    float: left;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.box2 {
+    background: #505050;
+    border: 1px solid #868686;
+    color: #d7d7d7;
+    height: 166px;
+    width: 230px;
+    padding: 20px 20px;
+}
